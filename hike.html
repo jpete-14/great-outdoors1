@@ -243,23 +243,6 @@
         <p id="searchResult"></p>
     </div>
 
-	
-    <script>
-        function searchFunction() {
-            const input = document.getElementById("searchInput").value.toLowerCase();
-            const bodyText = document.body.innerText.toLowerCase();
-            const result = document.getElementById("searchResult");
-
-            if (input.trim() === "") {
-                result.innerText = "Please enter a keyword.";
-            } else if (bodyText.includes(input)) {
-                result.innerText = `The term "${input}" was found on this page.`;
-            } else {
-                result.innerText = `No results found for "${input}".`;
-            }
-        }
-    </script>
-
     <!-- Description Section -->
     <div class="description-container">
         <h2 class="section-heading">Discover Stunning Trails</h2>
